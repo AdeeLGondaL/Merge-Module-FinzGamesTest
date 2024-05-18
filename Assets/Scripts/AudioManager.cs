@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip selectSound;
     [SerializeField] private AudioClip mergeSound;
     [SerializeField] private AudioClip errorSound;
+    [SerializeField] private AudioClip yayyySound;
 
     [SerializeField] private AudioSource buttonSounds;
     [SerializeField] private AudioSource gameSounds;
@@ -43,5 +44,10 @@ public class AudioManager : MonoBehaviour
     public void PlayErrorSound()
     {
         gameSounds.PlayOneShot(errorSound);
+    }
+
+    public void PlayYayyySound()
+    {
+        gameSounds.PlayOneShot(yayyySound);
     }
 }
